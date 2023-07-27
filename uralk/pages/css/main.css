@@ -5090,6 +5090,10 @@ ul.ts-pg-list > li {
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
+.ts-pg-img svg {
+	height: 107px;
+	width: 107px;
+}
 
 @media screen and (min-width: 992px) {
 
