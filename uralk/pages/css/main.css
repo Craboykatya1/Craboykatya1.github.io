@@ -5639,7 +5639,7 @@ ul.ct-sl-list > li {
 	background: none;
 	border: none;
 	position: absolute;
-	top: 43px;
+	top: 40%;
 	cursor: pointer;
 	z-index: 4;
 	width: 24px;
@@ -5649,11 +5649,11 @@ ul.ct-sl-list > li {
 }
 .ct-sl-list-prev{
 	left: 0;
-	transform: translateX(-12px);
+	transform: translate(-12px,-50%);
 }
 .ct-sl-list-next{
 	right: 0;
-	transform: translateX(12px);
+	transform: translate(12px,-50%);
 }
 .ct-sl-list-scroll{
 	background: #D9D9D9;
