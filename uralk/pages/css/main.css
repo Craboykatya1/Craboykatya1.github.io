@@ -5643,7 +5643,7 @@ ul.ct-sl-list > li {
 	background: none;
 	border: none;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	cursor: pointer;
 	z-index: 4;
 	width: 24px;
