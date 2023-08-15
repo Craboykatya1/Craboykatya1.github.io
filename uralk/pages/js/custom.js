@@ -71,6 +71,12 @@ $(document).ready(function(){
         });
     });
 
+    /* Всплывашка куки */
+    $('body').on('click', '.popup__cookie-btn, .popup__cookie-close', function(e){
+        $(this).closest('.popup__cookie').fadeOut(400);
+        $(this).closest('.popup__cookie').css({"transform":"translate(-50%,600px)"});
+    });
+
     /*
     Калькулятор единиц
      */

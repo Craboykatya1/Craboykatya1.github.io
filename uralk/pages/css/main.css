@@ -3192,6 +3192,67 @@ input[type=number] {
 	font-family: Futura PT;
 	text-decoration: none;
 }
+.popup__cookie{
+	position: fixed;
+	bottom: 38px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100vw - 108px);
+	border-radius: 55px;
+	background: rgba(196, 196, 196, 0.44);
+	backdrop-filter: blur(2px);
+	padding: 16px 102px;
+	padding-right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 99;
+	transition: all .4s ease;
+}
+.popup__cookie-text{
+	color: #4D4D4D;
+	font-family: 'Futura PT';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-right: 25px;
+}
+.popup__cookie-text a{
+	text-decoration-line: underline;
+}
+
+.popup__cookie-text p{
+	margin: 0;
+}
+.popup__cookie-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 46px;
+	background: #C4C4C4;
+	width: 207px;
+	height: 64px;
+	color: #FFF;
+	font-family: 'Futura PT';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	cursor: pointer;
+	transition: all .2s ease;
+	margin-right: 196px;
+}
+.popup__cookie-close{
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -6510,6 +6571,29 @@ ul.cart-list .fv-total {
 	.ct-store{
 		bottom: 55px;
 	}
+	.popup__cookie-btn{
+		margin-right: 82px;
+		width: 129px;
+		height: 41px;
+		font-size: 18px;
+	}
+	.popup__cookie-text{
+		font-size: 14px;
+		margin-right: 20px;
+	}
+	.popup__cookie-close svg{
+		width: 25px;
+		height: 25px;
+	}
+	.popup__cookie-close{
+		right: 32px;
+		width: 25px;
+		height: 25px;
+	}
+	.popup__cookie{
+		padding-left: 54px;
+		width: calc(100vw - 80px);
+	}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
@@ -8375,6 +8459,38 @@ ul.cart-list .fv-total {
 		margin-left: 5px;
 		width: 12px;
 	}
+	.popup__cookie{
+		border-radius: 17px;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 17px 11px;
+		padding-bottom: 6px;
+		bottom: 25px;
+		width: calc(100vw - 50px);
+	}
+	.popup__cookie-btn{
+		align-self: center;
+		margin-top: 5px;
+		font-size: 14px;
+		width: 129px;
+		height: 41px;
+		margin-right: 0;
+	}
+	.popup__cookie-close svg{
+		width: 22px;
+		height: 22px;
+	}
+	.popup__cookie-close{
+		right: 15px;
+		top: 11px;
+		transform: translateY(0);
+		width: 22px;
+		height: 22px;
+	}
+	.popup__cookie-text{
+		margin-right: 30px;
+		font-size: 13px;
+	}
 }
 
 
@@ -9711,3 +9827,4 @@ ul.cart-list .fv-total {
 	bottom: 0;
 	align-items: center;
 }
+
