@@ -396,13 +396,13 @@ body.scroll-locked {
 }
 .card-top__social{
   display: flex;
-  flex-direction: column;
   align-items: center;
   position: absolute;
-  left: 0;
+  left: 48px;
   bottom: 182px;
   bottom: calc(100vh - 295px);
-  transform: translateY(100%);
+  transform: translateY(100%) rotate(90deg) translateZ(0px);
+  transform-origin: top left;
 }
 .card-top__social-text{
   color: #383838;
@@ -410,18 +410,18 @@ body.scroll-locked {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.16px;
-  writing-mode: sideways-rl;
-  transform: rotate(180deg);
 }
 .card-top__socia-line{
-  width: 1px;
-  height: 24.5vh;
+  width: 24.5vh;
+  height: 1px;
   background: #383838;
-  margin: 50px 0;
+  margin: 0 50px;
 }
 .card-top__social-list{
   display: flex;
-  flex-direction: column;
+}
+.card-top__social-list a{
+  transform: rotate(-90deg);
 }
 .card__slider-text{
   position: absolute;

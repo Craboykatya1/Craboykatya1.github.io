@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1660px) {
     .media{margin-left: 20px;margin-right: 20px;width: calc(100% - 40px);}
-    .card-top__social{left: 20px;}
+    .card-top__social{left: 40px;}
 } 
 @media only screen and (max-width: 1600px) {  
     .home-top__description{width: calc(100% - 632px);}
@@ -170,9 +170,10 @@
     .card__slide-info{padding-top: 110px;}
     .card__slide-title{font-size: 18px;}
     .card__slide-subtitle{font-size: 36px;line-height: 42px;}
-    .card-top__social{bottom: 150px;height: calc(100vh - 250px);justify-content: flex-end;transform: translateY(0);}
-    ._doctors .card-top__social{bottom: 30px;height: calc(100vh - 130px);}
-    .card-top__socia-line{margin: 20px 0;height: calc(100% - 250px);}
+    .card-top__social{bottom: calc(100vh - 114px);}
+    .card-top__social-text{width: 116px;}
+    ._doctors .card-top__socia-line{width: calc(100vh - 366px);}
+    .card-top__socia-line{margin: 0 20px;width: calc(100vh - 496px);}
     .card__slider-text{padding: 20px;}
     .card__slider-text-title{font-size: 20px;line-height: 26px;}
     .card__slider-text-description{font-size: 16px;line-height: 26px;}
@@ -224,4 +225,5 @@
     .footer{flex-direction: column;align-items: center;}
     .footer__menu{margin-bottom: 10px;}
     .footer__social{justify-content: center;}
+    .card__slide-info{padding-left: 67px;}
 }
