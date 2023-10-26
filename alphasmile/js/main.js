@@ -326,6 +326,13 @@ $(document).ready(function(e) {
 		}, 1000);
 		return false;
 	});
+	$('.card__slide-btn').click(function(){
+		var el = $(this).attr('data-id');
+		$('html').animate({
+			scrollTop: $('.'+el).offset().top
+		}, 1000);
+		return false;
+	});
 	/* placeholders */
 	placeh('.affiliate__inps-block input');
 	placeh('.affiliate__inps-block textarea');
