@@ -154,7 +154,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			touchRatio: 1,
 			allowTouchMove: false,
-			loop: true,
 			autoplay: {
 				delay: 3000,
 			},
@@ -169,7 +168,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			touchRatio: 1,
 			allowTouchMove: false,
-			loop: true,
 			autoplay: {
 				delay: 3000,
 			},
@@ -181,26 +179,84 @@ $(document).ready(function(e) {
 	if ($('.teachers__slider').length) {
 		const swiper = new Swiper('.teachers__slider', {
 			spaceBetween: 20,
-			slidesPerView: 4,
-			slidesPerGroup: 4,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
 			touchRatio: 1,
 			allowTouchMove: false,
+			autoplay: {
+				delay: 3000,
+			},
             navigation: {
                 nextEl: '.teachers__next',
                 prevEl: '.teachers__prev',
             },
             pagination: {
 				el: '.teachers__pagination',
-			}
+			},
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                },
+                801: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                601: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    loop: false,
+                    autoplay: false,
+                },
+            },
+		});
+	}
+	if ($('.course-teachers__slider').length) {
+		const swiper = new Swiper('.course-teachers__slider', {
+			spaceBetween: 60,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			touchRatio: 1,
+			allowTouchMove: false,
+			autoplay: {
+				delay: 3000,
+			},
+            navigation: {
+                nextEl: '.course-teachers__next',
+                prevEl: '.course-teachers__prev',
+            },
+            pagination: {
+				el: '.course-teachers__pagination',
+			},
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                801: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                601: {
+                    spaceBetween: 20,
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    loop: false,
+                    autoplay: false,
+                },
+            },
 		});
 	}
 	if ($('.reviews-students__slider').length) {
 		const swiper = new Swiper('.reviews-students__slider', {
 			spaceBetween: 20,
-			slidesPerView: 4,
-			slidesPerGroup: 4,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
 			touchRatio: 1,
 			allowTouchMove: false,
+			autoplay: {
+				delay: 3000,
+			},
 			pagination: {
 				el: '.reviews-students__pagination',
 			},
@@ -208,15 +264,34 @@ $(document).ready(function(e) {
                 nextEl: '.reviews-students__next',
                 prevEl: '.reviews-students__prev',
             },
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                },
+                801: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                601: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    loop: false,
+                    autoplay: false,
+                },
+            },
 		});
 	}
 	if ($('.reviews-text__slider').length) {
 		const swiper = new Swiper('.reviews-text__slider', {
 			spaceBetween: 20,
-			slidesPerView: 2,
-			slidesPerGroup: 2,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
 			touchRatio: 1,
 			allowTouchMove: false,
+			autoplay: {
+				delay: 3000,
+			},
 			pagination: {
 				el: '.reviews-text__pagination',
 			},
@@ -224,17 +299,25 @@ $(document).ready(function(e) {
                 nextEl: '.reviews-text__next',
                 prevEl: '.reviews-text__prev',
             },
+            breakpoints: {
+                601: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    loop: false,
+                    autoplay: false,
+                },
+            },
 		});
 	}
 	if ($('.partners__slider').length) {
 		const swiper = new Swiper('.partners__slider', {
 			spaceBetween: 0,
 			slidesPerView: 'auto',
-			slidesPerGroup: 4,
+			slidesPerGroup: 2,
             autoHeight: false,
 			touchRatio: 1,
             grid: {
-                rows: 2,
+                rows: 3,
             },
 			allowTouchMove: false,
 			pagination: {
@@ -244,14 +327,34 @@ $(document).ready(function(e) {
                 nextEl: '.partners__next',
                 prevEl: '.partners__prev',
             },
+            breakpoints: {
+                992: {
+                    slidesPerView: 'auto',
+                    slidesPerGroup: 4,
+                },
+                801: {
+                    slidesPerView: 'auto',
+                    slidesPerGroup: 3,
+                },
+                601: {
+                    slidesPerView: 'auto',
+                    slidesPerGroup: 3,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+            },
 		});
 	}
 	if ($('.news__slider').length) {
 		const swiper = new Swiper('.news__slider', {
 			spaceBetween: 20,
-			slidesPerView: 4,
-			slidesPerGroup: 4,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
 			allowTouchMove: false,
+			autoplay: {
+				delay: 3000,
+			},
 			pagination: {
 				el: '.news__pagination',
 			},
@@ -259,8 +362,169 @@ $(document).ready(function(e) {
                 nextEl: '.news__next',
                 prevEl: '.news__prev',
             },
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                },
+                801: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                601: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    loop: false,
+                    autoplay: false,
+                },
+            },
 		});
 	}
+    if ($('.tariffs__list').length) {
+		const swiper = new Swiper('.tariffs__list', {
+			spaceBetween: 10,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			touchRatio: 1,
+			allowTouchMove: false,
+			autoplay: {
+				delay: 3000,
+			},
+			pagination: {
+				el: '.tariffs__pagination',
+			},
+            breakpoints: {
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 20,
+                    loop: false,
+                    autoplay: false,
+                },
+                801: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                601: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+            },
+		});
+	}
+    if ($('.popup-tariffs__slider').length) {
+		const swiper = new Swiper('.popup-tariffs__slider', {
+			spaceBetween: 20,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			touchRatio: 1,
+			allowTouchMove: false,
+            navigation: {
+                nextEl: '.popup-tariffs__next',
+                prevEl: '.popup-tariffs__prev',
+            },
+            breakpoints: {
+                992: {
+                    
+                },
+            },
+		});
+        $('.tariffs__btn').click(function(){
+            let indEl = $(this).closest('.tariffs__item').index();
+            swiper.slideTo(indEl);
+            lockScroll();
+            $('.shadow-page').fadeIn(200);
+            setTimeout(function(){
+                $('.popup-tariffs').fadeIn(200);
+                $('.popup-tariffs').addClass('_open');
+            },200);
+        });
+	}
+    
+    $('.popup-tariffs__close').click(function(){
+        unlockScroll();
+        $('.shadow-page').fadeOut(200);
+        $('.popup-tariffs').fadeOut(200);
+        $('.popup-tariffs').removeClass('_open');
+    });
+    /* Мобильное меню */
+    $('.header__butter').click(function(){
+        if($(this).hasClass('_open')){
+            $(this).removeClass('_open');
+            $('.header__menu').slideUp(200);
+        }
+        else{
+            $(this).addClass('_open');
+            $('.header__menu').slideDown(200);
+        }
+    });
+    $('.footer__menu-title').click(function(e){
+        if($(window).width() <= 991){
+            e.preventDefault();
+            if($(this).hasClass('_open')){
+                $(this).removeClass('_open');
+                $(this).closest('.footer__menu').find('.footer__menu-list').slideUp(200);
+            }
+            else{
+                $(this).addClass('_open');
+                $(this).closest('.footer__menu').find('.footer__menu-list').slideDown(200);
+            }
+            
+        }
+    });
+    /* Все курсы */
+    $('.header__courses').click(function(){
+        if($(this).hasClass('_open')){
+            $(this).removeClass('_open');
+            $('.header__menu-courses').slideUp(200);
+        }
+        else{
+            $(this).addClass('_open');
+            $('.header__menu-courses').slideDown(200);
+        }
+    });
+    $(document).mouseup(function(e) {
+        if ($('.header__courses').hasClass('_open')) {
+            var div = $('.header__menu-courses');
+            if (!div.is(e.target) &&
+                div.has(e.target).length === 0) {
+                div.slideUp(200);
+                $('.header__courses').removeClass('_open');
+            }
+        }
+    });
+    /* scroll */
+    $('.scroll').click(function(){
+        let scrollEl = $(this).attr('data-scroll');
+        console.log(scrollEl);
+        $('html, body').animate({scrollTop: $(scrollEl).offset().top}, 1000);
+    });
+    /* FAQ */
+    $('.faq__top').click(function(){
+        if($(this).closest('.faq__item').hasClass('_active')){
+            $(this).closest('.faq__item').removeClass('_active');
+            $(this).closest('.faq__item').find('.faq__bottom').slideUp(200);
+        }
+        else{
+            $(this).closest('.faq__item').addClass('_active');
+            $(this).closest('.faq__item').find('.faq__bottom').slideDown(200);
+        }
+    });
+    /* Программа курса */
+    $('.course-program__item-title').click(function(){
+        if($(window).width() <= 991){
+            if($(this).closest('.course-program__item').hasClass('_active')){
+                $(this).closest('.course-program__item').removeClass('_active');
+                $(this).closest('.course-program__item').find('.course-program__item-bottom').slideUp(200);
+            }
+            else{
+                $(this).closest('.course-program__item').addClass('_active');
+                $(this).closest('.course-program__item').find('.course-program__item-bottom').slideDown(200);
+
+            }
+        }
+    });
 	placeh('#search');
+	placeh('.course-search input');
 });
 });
