@@ -153,7 +153,6 @@ $(document).ready(function(e) {
 			spaceBetween: 30,
 			slidesPerView: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -167,7 +166,6 @@ $(document).ready(function(e) {
 			spaceBetween: 0,
 			slidesPerView: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -182,7 +180,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -220,7 +217,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -258,7 +254,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -293,7 +288,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -324,7 +318,6 @@ $(document).ready(function(e) {
             grid: {
                 rows: 3,
             },
-			allowTouchMove: false,
 			pagination: {
 				el: '.partners__pagination',
 			},
@@ -356,7 +349,6 @@ $(document).ready(function(e) {
 			spaceBetween: 20,
 			slidesPerView: 1,
 			slidesPerGroup: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -391,7 +383,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
 			autoplay: {
 				delay: 3000,
 			},
@@ -423,7 +414,6 @@ $(document).ready(function(e) {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
-			allowTouchMove: false,
             navigation: {
                 nextEl: '.popup-tariffs__next',
                 prevEl: '.popup-tariffs__prev',
