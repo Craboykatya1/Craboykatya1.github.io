@@ -178,7 +178,7 @@ $(document).ready(function(e) {
 	}
 	if ($('.teachers__slider').length) {
 		const swiper = new Swiper('.teachers__slider', {
-			spaceBetween: 20,
+			spaceBetween: 60,
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			touchRatio: 1,
@@ -195,14 +195,17 @@ $(document).ready(function(e) {
 			},
             breakpoints: {
                 992: {
+                    spaceBetween: 20,
                     slidesPerView: 4,
                     slidesPerGroup: 4,
                 },
                 801: {
+                    spaceBetween: 20,
                     slidesPerView: 3,
                     slidesPerGroup: 3,
                 },
                 601: {
+                    spaceBetween: 20,
                     slidesPerView: 2,
                     slidesPerGroup: 2,
                     loop: false,
@@ -230,10 +233,12 @@ $(document).ready(function(e) {
 			},
             breakpoints: {
                 992: {
+                    spaceBetween: 20,
                     slidesPerView: 2,
                     slidesPerGroup: 2,
                 },
                 801: {
+                    spaceBetween: 20,
                     slidesPerView: 2,
                     slidesPerGroup: 2,
                 },

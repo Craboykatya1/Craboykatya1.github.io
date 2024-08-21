@@ -565,6 +565,7 @@
     }
     .teachers__top{
         margin-bottom: 10px;
+        margin-bottom: 0;
     }
     .teachers__pagination,
     .course-teachers__pagination{
@@ -1159,8 +1160,9 @@
         font-size: 20px;
         line-height: 25px;
     }
-    .course-teachers__slider{
-        padding-top: 11px;
+    .course-teachers__slider,
+    .teachers__slider{
+        padding-top: 20px;
     }
     .teachers__slide{
         box-shadow: 8px 5px 50px #0C2841;
@@ -1742,9 +1744,6 @@
     .course-teachers__navigation{
         display: none;
     }
-    .teachers__slider{
-        padding-top: 0;
-    }
     .teachers__slide{
         flex-direction: column;
         display: flex;
@@ -1950,5 +1949,8 @@
     }
     .about-curse__pluses-item:not(:last-child){
         margin-bottom: 10px;
+    }
+    .teachers__slider{
+        width: auto;
     }
 }
