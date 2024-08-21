@@ -481,7 +481,7 @@ $(document).ready(function(e) {
     $(document).mouseup(function(e) {
         if ($('.header__courses').hasClass('_open')) {
             var div = $('.header__menu-courses');
-            if (!div.is(e.target) &&
+            if (!div.is(e.target) && !$('.header__courses').is(e.target) &&
                 div.has(e.target).length === 0) {
                 div.slideUp(200);
                 $('.header__courses').removeClass('_open');
