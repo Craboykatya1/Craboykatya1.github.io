@@ -1693,6 +1693,26 @@ main{
   line-height: 20px;
   text-align: center;
 }
+.courses-top__img-btn{
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 181px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  color: #fff;
+  font-size: 16px; 
+  font-family: MulishRegular;
+  line-height: 20px;
+  z-index: 1;
+  background: #B70928;
+  border-radius: 15px;
+}
 .about-curse{
   padding: 80px 0;
   background: #1D4B73;
@@ -1700,7 +1720,7 @@ main{
 .about-curse__top{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 53px;
+  margin-bottom: 100px;
 }
 .about-curse__info{
   width: 580px;
@@ -1879,7 +1899,7 @@ main{
 .course-program__item-title{
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #333333; 
   font-size: 28px; 
   font-family: MulishBold;
@@ -1938,6 +1958,7 @@ main{
   font-family: MulishRegular; 
   position: relative;
   padding-left: 15px;
+  line-height: 28px;
 }
 .course-program__pluses-item li::before{
   content: "";
@@ -2965,6 +2986,9 @@ main{
 @media (any-hover: hover) {
   .offers__link:hover .offers__link__icon{
     background: #CEE4E2;
+  }
+  .courses-top__img-btn:hover{
+    background: #DC2F4D;
   }
   .top-subdivision__send:hover{
     background: #DC2F4D;
