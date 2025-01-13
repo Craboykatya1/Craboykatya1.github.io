@@ -873,6 +873,7 @@ img {
   overflow: hidden;
   width: 22.03vh;
   height: 22.03vh;
+  cursor: pointer;
 }
 .team__photo img{
   width: 100%;
