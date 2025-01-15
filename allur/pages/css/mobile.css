@@ -1,3 +1,103 @@
+@media only screen and (max-height: 900px) and (min-width: 1100px) {
+    .top-window h1 span{
+        font-size: 56px;
+        line-height: 68px;
+    }
+    .offers h2,
+    .about-top h2,
+    .gallery h2,
+    .event h2,
+    .individual h2,
+    .team h2{
+        margin-top: 0;
+        font-size: 42px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    .factories h2{
+        margin-top: 10px;
+        font-size: 42px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    .about-top__description{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .about-top__description p:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .about-top h2{
+        padding-top: 0;
+    }
+    .about-top__photo{
+        width: 740px;
+    }
+    .about-top__photo img{
+        object-position: top;
+    }
+    .about-down__list{
+        margin-top: 15px;
+    }
+    .about-down__description p:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .about-down__description{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .gallery__name{
+        font-size: 30px;
+    }
+    .event__name{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .about-down__tg-description{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .team__text{
+        top: 68px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .individual__description{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .individual__name{
+        font-size: 2.826vh;
+        line-height: 3.261vh;
+    }
+    .footer{
+        padding-top: 20px;
+        height: 200px;
+    }
+    .form__block{
+        height: calc(100vh - 285px);
+    }
+    .footer__link-down{
+        margin-top: 38px;
+    }
+    .form__container{
+        height: calc(100% - 70px);
+    }
+    .form__title{
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .form__description{
+        margin-bottom: 25px;
+    }
+    .form__inps{
+        margin-bottom: 20px;
+    }
+    .form__agree{
+        margin-top: 20px;
+    }
+}
 @media only screen and (max-width: 1800px) {  
     .header__menu-list{
         gap: 15px;
@@ -17,6 +117,15 @@
     .header__phone,
     .header__btn{
         font-size: 16px;
+    }
+    .footer__menu-list{
+        gap: 20px 30px;
+    }
+    .footer__logo{
+        width: 200px;
+    }
+    .footer__logo svg{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1350px) {
@@ -461,6 +570,9 @@
     .footer__left{
         width: 408px;
         margin-bottom: 105px;
+    }
+    .footer__logo{
+        width: auto;
     }
     .footer__logo svg{
         width: 408px;
