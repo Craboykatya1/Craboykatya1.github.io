@@ -97,6 +97,10 @@
     .form__agree{
         margin-top: 20px;
     }
+    .team__btn{
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 @media only screen and (max-width: 1800px) {  
     .header__menu-list{
