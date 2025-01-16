@@ -9,7 +9,7 @@
     .event h2,
     .individual h2,
     .team h2{
-        margin-top: 0;
+        margin-top: 15px;
         font-size: 42px;
         line-height: 48px;
         margin-bottom: 20px;
