@@ -1221,5 +1221,10 @@
     }
     .footer__logo{
         max-width: 279px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .wrapper{
+        overflow: hidden;
     }
 }
