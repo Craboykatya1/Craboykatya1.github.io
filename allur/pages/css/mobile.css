@@ -132,6 +132,60 @@
         width: 100%;
     }
 }
+@media only screen and  (max-width: 1500px) {
+    .cooperation-top__container > img{
+        height: 762px;
+    }
+    .cooperation-top__container{
+        height: calc(762px - 90px);
+    }
+    .pluses-job h2{
+        margin-bottom: 49px;
+    }
+    .pluses-job__item{
+        padding: 17px 0;
+        padding-left: 22px;
+    }
+    .pluses-job__block:last-child .pluses-job__item{
+        max-width: 394px;
+    }
+    .win{
+        height: 358px;
+    }
+    .win__info{
+        left: 21.68vw;
+    }
+    .win__info h2{
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .win__info img{
+        width: 342px;
+    }
+    .win__btn{
+        width: 365px;
+        height: 37px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .designers h2{
+        margin-left: 37px;
+    }
+    .designers__name{
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+    .designers__web{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 11px;
+    }
+    .designers__description{
+        font-size: 21px;
+        line-height: 24px;
+    }
+}
 @media only screen and (max-width: 1350px) {
     .header__butter{
         display: flex;
@@ -245,6 +299,31 @@
     }
     .team__slide:nth-child(3){
         width: calc(50% - 30px) !important;
+    }
+}
+@media only screen and (max-width: 1270px) {
+    .cooperation-top__container > img{
+        height: 732px;
+    }
+    .cooperation-top__container{
+        height: calc(732px - 90px);
+    }
+    .cooperation-top__description{
+        margin-bottom: 30px;
+    }
+    .cooperation-top__subtitle{
+        max-width: 584px;
+    }
+    .cooperation-top__description{
+        max-width: 580px;
+    }
+    .designers__description{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .designers__img{
+        width: 171px;
+        height: 171px;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -631,6 +710,192 @@
     }
     .about-top__description img{
         display: none;
+    }
+    .cooperation-top{
+        padding-top: 48px;
+        margin-top: -48px;
+    }
+    .cooperation-top h1{
+        font-size: 34px;
+        line-height: 39px;
+        margin-left: 34px;
+    }
+    .cooperation-top__subtitle{
+        font-size: 34px;
+        line-height: 39px;
+        max-width: 467px;
+    }
+    .cooperation-top__description{
+        max-width: 467px;
+    }
+    .cooperation-top__img{
+        height: 21.39vw;
+        width: 45.41vw;
+    }
+    .cooperation-top__container > img{
+        width: 48.73vw;
+        height: 764px;
+    }
+    .cooperation-top__container{
+        height: calc(764px - 48px);
+    }
+    .pages{
+        margin-top: 0;
+    }
+    .breadcrumbs{
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .breadcrumbs a,
+    .breadcrumbs span{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .cooperation-top{
+        margin-bottom: 60px;
+    }
+    .pluses-job{
+        margin-bottom: 60px;
+    }
+    .pluses-job h2{
+        font-size: 34px;
+        line-height: 39px;
+        max-width: 323px;
+    }
+    .pluses-job__list{
+        gap: 25px 0;
+    }
+    .pluses-job__item{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .pluses-job__img{
+        width: 52.73vw;
+        height: 27.54vw;
+    }
+    .pluses-job__imgs{
+      width: 48.73vw;
+    }
+    .pluses-job__imgs img:first-child{
+      width: 21.88vw;
+      height: 29.88vw;
+    }
+    .pluses-job__imgs img:last-child{
+      width: 24.12vw;
+      height: 29.88vw;
+    }
+    .pluses-job__block:not(:last-child){
+        margin-bottom: 28px;
+    }
+    .win{
+        margin-bottom: 60px;
+    }
+    .win__info{
+        left: 191px;
+    }
+    .win > img{
+        object-position: left;
+        min-width: 1024px;
+    }
+    .designers{
+        margin-bottom: 60px;
+    }
+    .designers h2{
+        margin-bottom: 30px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .designers__list{
+        gap: 28px 0;
+    }
+    .designers__name{
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+    .designers__web{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 11px;
+    }
+    .designers__description{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .designers__img{
+        width: 171px;
+        height: 171px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .cooperation-top__container > img{
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        height: 655px;
+        object-position: bottom;
+        margin-bottom: 26px;
+    }
+    .cooperation-top__img{
+        width: 100%;
+        height: auto;
+    }
+    .cooperation-top__container{
+        height: auto;
+    }
+    .cooperation-top__subtitle{
+        margin-bottom: 26px;
+        max-width: 100%;
+    }
+    .cooperation-top__description{
+        max-width: 100%;
+        margin-bottom: 26px;
+    }
+    .cooperation-top h1{
+        margin-bottom: 48px;
+    }
+    .pluses-job__block{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .pluses-job__block:first-child .pluses-job__info{
+        order: 1;
+    }
+    .pluses-job__block:first-child{
+        padding-top: 108px;
+    }
+    .pluses-job h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .pluses-job__img{
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .pluses-job__info{
+        margin: 0;
+    }
+    .pluses-job__list{
+        gap: 40px 0;
+    }
+    .pluses-job__imgs{
+        order: 1;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .pluses-job__imgs img:first-child{
+      width: 42.27vw;
+      height: 60.39vw;
+    }
+    .pluses-job__imgs img:last-child{
+      width: 46.38vw;
+      height: 60.39vw;
+    }
+    .pluses-job__block:not(:last-child){
+        margin-bottom: 32px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -1226,5 +1491,119 @@
     }
     .wrapper{
         overflow: hidden;
+    }
+    .cooperation-top__container > img{
+        height: 94.69vw;
+    }
+    .cooperation-top__subtitle{
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .cooperation-top__description{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .cooperation-top h1{
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .cooperation-top{
+        margin-bottom: 48px;
+    }
+    .pluses-job{
+        margin-bottom: 48px;
+    }
+    .pluses-job h2{
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 30px;
+    }
+    .pluses-job__item{
+        padding: 5px 0;
+        padding-left: 30px;
+        font-size: 22px;
+        line-height: 25px;
+        max-width: 278px;
+    }
+    .win > img:nth-child(2){
+      display: block;
+      width: 100%;
+      min-width: auto;
+      height: 605px;
+    }
+    .win{
+        height: auto;
+        margin-bottom: 48px;
+    }
+    .win > img:nth-child(1){
+      display: none;
+    }
+    .win__info h2{
+        font-size: 38px;
+        line-height: 44px;
+        max-width: 306px;
+        text-align: center;
+    }
+    .win__info img{
+        width: 324px;
+    }
+    .win__btn{
+        width: 247px;
+        height: 37px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .win__info{
+        transform: translateX(-50%);
+        top: 60px;
+        left: 50%;
+    }
+    .designers{
+        margin-bottom: 48px;
+    }
+    .designers h2{
+        font-size: 32px;
+        line-height: 37px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .designers__list{
+        gap: 20px 0;
+    }
+    .designers__item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .designers__description{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+    .designers__img{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .designers__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .cooperation-top__subtitle{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .cooperation-top h1{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .designers h2{
+        font-size: 24px;
+        line-height: 28px;
     }
 }
