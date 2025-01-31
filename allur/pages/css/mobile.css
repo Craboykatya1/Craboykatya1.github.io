@@ -109,6 +109,10 @@
     .header__menu{
         margin: 0 12px;
     }
+    .cooperation-top h1,
+    .designers h2{
+        margin-left: 37px;
+    }
 }
 @media only screen and (max-width: 1660px) {
     .header__logo svg{
