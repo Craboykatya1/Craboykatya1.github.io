@@ -113,6 +113,13 @@
     .designers h2{
         margin-left: 37px;
     }
+    .contest-top h1{
+        margin-left: 37px;
+    }
+    .contest-top__block img{
+        left: -10px;
+        transform: translateX(0);
+    }
 }
 @media only screen and (max-width: 1660px) {
     .header__logo svg{
@@ -134,6 +141,13 @@
     }
     .footer__logo svg{
         width: 100%;
+    }
+    .opportunity__img{
+        height: 542px;
+        margin-top: auto;
+    }
+    .opportunity__info{
+        width: 584px;
     }
 }
 @media only screen and  (max-width: 1500px) {
@@ -328,6 +342,12 @@
     .designers__img{
         width: 171px;
         height: 171px;
+    }
+    .contest-top__description{
+        text-align: center;
+    }
+    .contest-top__description span{
+        display: block;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -830,6 +850,163 @@
         width: 171px;
         height: 171px;
     }
+    .contest-top h1{
+      font-size: 34px;
+      line-height: 39px;
+      margin-bottom: 48px;
+    }
+    .contest-top__block{
+      margin-bottom: 60px;
+    }
+    .contest-top__block img{
+      max-width: none;
+      left: -32px;
+      transform: translateX(0);
+      height: 120.02vw;
+      object-fit: cover;
+    }
+    .contest-top__info{
+      top: 120px;
+    }
+    .contest-top__description span{
+      font-size: 38px;
+      line-height: 44px;
+    }
+    .opportunity{
+        margin-bottom: 60px;
+    }
+    .opportunity__info-description{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .opportunity__info{
+        width: 46.78vw;
+    }
+    .opportunity__info-imgs{
+        gap: 38px;
+    }
+    .opportunity__info-imgs img:first-child{
+        width: 19.04vw;
+        height: 20.31vw;
+        object-fit: cover;
+    }
+    .opportunity__info-imgs img:last-child{
+        width: 20.80vw;
+        height: 20.31vw;
+        object-fit: cover;
+    }
+    .opportunity__img{
+        width: 46.88vw;
+        height: 41.50vw;
+    }
+    .conditions h2{
+        font-size: 34px;
+        line-height: 39px;
+        margin-bottom: 30px;
+    }
+    .conditions__title{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .conditions__description{
+        margin-bottom: 60px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .conditions__description li{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .conditions__description li::before{
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .conditions__step{
+        margin-bottom: 60px;
+    }
+    .conditions__step-title{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .category__list{
+        gap: 55px;
+        margin-bottom: 60px;
+    }
+    .category__title{
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 8px;
+    }
+    .category__description{
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    .category__bottom{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .important{
+        font-size: 34px;
+        line-height: 39px;
+        margin-bottom: 60px;
+    }
+    .conditions__form{
+        margin-bottom: 60px;
+    }
+    .conditions__form img{
+        height: 1201px;
+        min-width: 1024px;
+    }
+    .conditions__form img:nth-child(2){
+        display: block;
+    }
+    .conditions__form img:nth-child(1){
+        display: none;
+    }
+    .conditions__step-description{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .conditions__step-description li{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .conditions__step-description li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .conditions__step-description li::before{
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .conditions__step-description > span{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .conditions__step-description > span br{
+        display: none;
+    }
+    .conditions__step-description > span:not(:last-child){
+      margin-bottom: 24px;
+    }
+    .conditions__step-description p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .form__block._contest > img:nth-child(1){
+        display: none;
+    }
+    .form__block._contest > img:nth-child(2){
+        display: block;
+    }
 }
 @media only screen and (max-width: 991px) {
     .cooperation-top__container > img{
@@ -900,6 +1077,49 @@
     }
     .pluses-job__block:not(:last-child){
         margin-bottom: 32px;
+    }
+    .contest-top__info{
+        top: 36px;
+    }
+    .contest-top__title{
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .contest-top__description{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contest-top__description span{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .opportunity__block{
+        flex-direction: column;
+    }
+    .opportunity__info{
+        width: 100%;
+    }
+    .opportunity__info-imgs{
+        justify-content: space-between;
+    }
+    .opportunity__info-imgs{
+        gap: 26px;
+        margin-top: 20px;
+    }
+    .opportunity__info-imgs img:first-child{
+        width: 41.79vw;
+        height: 44.69vw;
+        object-fit: cover;
+    }
+    .opportunity__info-imgs img:last-child{
+        width: 45.65vw;
+        height: 44.69vw;
+        object-fit: cover;
+    }
+    .opportunity__img{
+        margin-top: 26px;
+        width: 100%;
+        height: auto;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -1595,6 +1815,99 @@
         align-items: center;
         width: 100%;
     }
+    .contest-top__block{
+        margin-bottom: 48px;
+    }
+    .contest-top h1{
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 40px;
+    }
+    .contest-top__block img{
+        left: -146px;
+        height: 155.07vw;
+    }
+    .opportunity{
+        margin-bottom: 48px;
+    }
+    .opportunity__info-description{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .conditions h2{
+        margin-bottom: 38px;
+    }
+    .conditions__description{
+        margin-bottom: 48px;
+    }
+    .conditions__description li{
+        position: relative;
+        padding-left: 30px;
+    }
+    .conditions__description li::before{
+        width: 6px;
+        height: 6px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        left: 10px;
+        top: 15px;
+        position: absolute;
+    }
+    .conditions__step{
+        margin-bottom: 48px;
+    }
+    .conditions__step-title{
+        margin-bottom: 28px;
+    }
+    .category__list{
+        gap: 28px;
+        margin-bottom: 48px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .category__description{
+        margin-bottom: 30px;
+    }
+    .important{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 48px;
+    }
+    .conditions__form{
+        margin-bottom: 48px;
+    }
+    .conditions__form img{
+        height: 707px;
+        min-width: 414px;
+    }
+    .conditions__form img:nth-child(2){
+        display: block;
+    }
+    .conditions__form img:nth-child(1){
+        display: none;
+    }
+    .conditions__step-description li{
+        position: relative;
+        padding-left: 30px;
+    }
+    .conditions__step-description li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .conditions__step-description li::before{
+        width: 6px;
+        height: 6px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        left: 10px;
+        top: 15px;
+        position: absolute;
+    }
+    .conditions__step-description > span:not(:last-child){
+      margin-bottom: 20px;
+    }
 }
 @media only screen and (max-width: 380px) {
     .cooperation-top__subtitle{
@@ -1609,5 +1922,25 @@
     .designers h2{
         font-size: 24px;
         line-height: 28px;
+    }
+    .contest-top h1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contest-top__title{
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .contest-top__description{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .contest-top__description span{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contest-top__block img{
+        left: -198px;
     }
 }
