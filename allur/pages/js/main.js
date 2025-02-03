@@ -28,6 +28,23 @@ $(function(){
 				 $(this).attr("placeholder", $(this).data('empty'));  
 			});
 	}
+	function valid(input_id){
+		input_val = input_id.val();
+		console.log(input_val);
+		if(!input_val)
+		  {
+		  input_id.addClass('_valid');
+		  }
+		else
+		  {
+		  input_id.removeClass('_valid');
+		  }
+	}
+	function clear(input_id,border,backg){
+		if(border){$(input_id).css("border",border);}
+		if(backg){$(input_id).css("background-color",backg);}
+		$(input_id).val('');
+	}
     function chekb(class_one,class_activ){
 		if(class_one.children('input').prop('checked') == false)
 			{
@@ -49,11 +66,13 @@ $(function(){
     }
 $(document).ready(function(e) {
 	if($(window).width() > 1100){
-		$('#fullpage').fullpage({
-			//options here
-			autoScrolling:true,
-			scrollHorizontally: true
-		});
+		if($('#fullpage').length){
+			$('#fullpage').fullpage({
+				//options here
+				autoScrolling:true,
+				scrollHorizontally: true
+			});
+		}
 	}
 	$(window).resize(function() {
 		
@@ -70,10 +89,20 @@ $(document).ready(function(e) {
 		$('#'+idEl).fadeIn(200);
 	});
 	$(window).on('click', '.modal__btn', function(){
-		$('.modal').fadeOut(200);
-		setTimeout(function(){
-			$('#final').fadeIn(200);
-		},200);
+		let inpName = $(this).closest('.modal').find('.form-name');
+		let inpPhone = $(this).closest('.modal').find('.form-phone');
+		valid(inpName);
+		valid(inpPhone);
+		if(inpName.val() =='' || inpPhone.val() ==''){
+		}
+		else{
+			/* $(this).closest('form').submit(); */
+			$('.modal').fadeOut(200);
+			setTimeout(function(){
+				$('#final').fadeIn(200);
+			},200);
+		}
+		
 	});
 	$('.header__butter').click(function(){
 		if($(this).hasClass('_open')){
@@ -100,6 +129,17 @@ $(document).ready(function(e) {
 			}
 		}
     });
+	$('.form__valid').click(function(e){
+		let inpName = $(this).closest('form').find('.form-name');
+		let inpPhone = $(this).closest('form').find('.form-phone');
+		valid(inpName);
+		valid(inpPhone);
+		if(inpName.val() =='' || inpPhone.val() ==''){
+		}
+		else{
+			$(this).closest('form').submit();
+		}
+	});
     if($('.factories__list').length){
         const swiper = new Swiper('.factories__list',{
             spaceBetween: 20,
