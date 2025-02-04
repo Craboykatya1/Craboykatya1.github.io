@@ -77,6 +77,7 @@ $(document).ready(function(e) {
 	$(window).resize(function() {
 		
 	});
+	$('input[type=tel]').mask("+7(999) 999-99-99");
 	$(window).on('click', '.modal__close', function(){
 		unlockScroll();
 		$('.page-shadow').fadeOut(200);
