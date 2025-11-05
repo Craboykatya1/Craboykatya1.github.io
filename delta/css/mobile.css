@@ -1,0 +1,49 @@
+@media only screen and (max-width: 991px) {  
+    .table th,
+    .table td{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .table td:not(:first-child){
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .chart{
+        max-width: 100%;
+        max-height: 340px;
+    }
+    .table__details td:first-child{
+        padding: 15px;
+    }
+    .table-block{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .table{
+        min-width: 606px;
+    }
+    .table{
+        border-spacing: 3px;
+    }
+    .table th:first-child,
+    .table td:first-child{
+        min-width: 165px;
+        width: 20%;
+    }
+    .table th:nth-child(2),
+    .table td:nth-child(2){
+        min-width: 128px;
+        width: 18%;
+    }
+    .table th:nth-child(3),
+    .table td:nth-child(3){
+        min-width: 134px;
+        width: 18%;
+    }
+    .table th:last-child,
+    .table td:last-child{
+        min-width: 164px;
+        width: 20%;
+    }
+}

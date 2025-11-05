@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+	<meta charset='utf-8' />
+	<title>New project start</title>
+	<meta name='description' content='Startpack project' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+	<link href='css/style.css' type='text/css' rel='stylesheet' />
+	<link href='css/mobile.css' type='text/css' rel='stylesheet' />
+
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div class="container table-block">
+			<table class="table">
+				<tr>
+					<th>Показатель</th>
+					<th>Текущий день</th>
+					<th>Вчера</th>
+					<th>Этот день недели</th>
+				</tr>
+				<tr class="table__row">
+					<td>Выручка, руб.</td>
+					<td>500 521</td>
+					<td class="good">
+						<div class="table__stats">
+							480 521
+							<span>4%</span>
+						</div>
+					</td>
+					<td class="bad">4 825 121</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart" class="chart" data-series="0, 450000, 480521, 500521, 465000, 458000, 510000"></figure>
+					</td>
+				</tr>
+				<tr class="table__details">
+					<td>Наличные</td>
+					<td>300 000</td>
+					<td>
+						<div class="table__stats">
+							300 000
+							<span>0%</span>
+						</div>
+					</td>
+					<td>300 000</td>
+				</tr>
+				<tr class="table__details">
+					<td>Безналичный расчет</td>
+					<td>100 000</td>
+					<td>
+						<div class="table__stats">
+							100 000
+							<span>0%</span>
+						</div>
+					</td>
+					<td>100 000</td>
+				</tr>
+				<tr class="table__details">
+					<td>Кредитные карты</td>
+					<td>100 521</td>
+					<td>
+						<div class="table__stats">
+							100 521
+							<span>0%</span>
+						</div>
+					</td>
+					<td>100 521</td>
+				</tr>
+				<tr class="table__row">
+					<td>Средний чек, руб</td>
+					<td>1300</td>
+					<td class="good">
+						<div class="table__stats">
+							900
+							<span>44%</span>
+						</div>
+					</td>
+					<td class="good">900</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart-1" class="chart" data-series="500, 1200, 1300, 900, 1000, 1100"></figure>
+					</td>
+				</tr>
+				<tr class="table__row">
+					<td>Средний гость, руб</td>
+					<td>1200</td>
+					<td class="good">
+						<div class="table__stats">
+							800
+							<span>50%</span>
+						</div>
+					</td>
+					<td class="good">800</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart-2" class="chart" data-series="700, 1200, 1200, 800, 800, 400"></figure>
+					</td>
+				</tr>
+				<tr class="table__row">
+					<td>Удаления из чека (после оплаты), руб</td>
+					<td>1000</td>
+					<td class="bad">
+						<div class="table__stats">
+							1100
+							<span>-9%</span>
+						</div>
+					</td>
+					<td class="good">900</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart-3" class="chart" data-series="700, 1200, 1100, 1000, 800, 400"></figure>
+					</td>
+				</tr>
+				<tr class="table__row">
+					<td>Удаления из чека (до оплаты), руб</td>
+					<td>1300</td>
+					<td>
+						<div class="table__stats">
+							1300
+							<span>0%</span>
+						</div>
+					</td>
+					<td class="good">900</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart-4" class="chart" data-series="1100, 1000, 1300, 1300, 900, 500"></figure>
+					</td>
+				</tr>
+				<tr class="table__row">
+					<td>Количество чеков</td>
+					<td>34</td>
+					<td class="bad">
+						<div class="table__stats">
+							36
+							<span>-6%</span>
+						</div>
+					</td>
+					<td>34</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart-5" class="chart" data-series="35, 48, 36, 34, 56, 48"></figure>
+					</td>
+				</tr>
+				<tr class="table__row">
+					<td>Количество гостей</td>
+					<td>34</td>
+					<td class="bad">
+						<div class="table__stats">
+							36
+							<span>-6%</span>
+						</div>
+					</td>
+					<td class="good">32</td>
+				</tr>
+				<tr class="table__details">
+					<td colspan="4">
+						<figure id="chart-6" class="chart" data-series="28, 42, 36, 34, 50, 48"></figure>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+	<footer></footer>
+
+
+	<script src='js/jquery-1.7.2.min.js'></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+	<script src="https://code.highcharts.com/themes/adaptive.js"></script>
+	<script src='js/main.js'></script>
+</body>
+
+</html>
