@@ -66,11 +66,14 @@ img {
   padding: 0 15px;
 }
 .table-block{
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 15px;
 }
 .table{
   border-spacing: 5px;
   width: 100%;
+  max-width: 900px;
 }
 .table th{
   background: #F0F0F0;
@@ -93,17 +96,17 @@ img {
 }
 .table th:first-child,
 .table td:first-child{
-  width: 40%;
+  width: 42%;
 }
 .table th:nth-child(2),
 .table td:nth-child(2),
 .table th:nth-child(3),
 .table td:nth-child(3){
-  width: 18%;
+  width: 19%;
 }
 .table th:last-child,
 .table td:last-child{
-  width: 24%;
+  width: 20%;
 }
 .table th:nth-child(2),
 .table td:nth-child(2){
@@ -112,6 +115,7 @@ img {
 .table td:not(:first-child){
   text-align: right;
   padding: 15px 25px;
+  padding-left: 15px;
 }
 .table td.good{
   background: #c7ffd3;
@@ -126,8 +130,15 @@ img {
 .table__details td:first-child{
   padding: 15px 25px;
 }
+.table__stats{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
 .table__stats span{
   color: green;
+  width: 35px;
 }
 .bad .table__stats span{
   color: red;

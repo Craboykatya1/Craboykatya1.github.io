@@ -19,6 +19,7 @@
     .table-block{
         width: 100%;
         overflow-x: scroll;
+        justify-content: flex-start;
     }
     .table{
         min-width: 606px;
@@ -28,7 +29,7 @@
     }
     .table th:first-child,
     .table td:first-child{
-        min-width: 165px;
+        min-width: 168px;
         width: 20%;
     }
     .table th:nth-child(2),
@@ -45,5 +46,11 @@
     .table td:last-child{
         min-width: 164px;
         width: 20%;
+    }
+    .table__stats{
+        gap: 10px;
+    }
+    .table__stats span{
+        width: 28px;
     }
 }
