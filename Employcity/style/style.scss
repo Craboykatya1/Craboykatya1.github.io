@@ -118,6 +118,11 @@ img{
         height: 60px;
         width: 100vw;
     }
+    &._open{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+    }
     .header__container{
         display: flex;
         justify-content: space-between;
@@ -225,7 +230,7 @@ img{
 main._scroll {
     margin-top: 5.21vw;
     @media only screen and (max-width: 991px) {
-        margin-top: 60px;
+        margin-top: 60px !important;
     }
     
 }

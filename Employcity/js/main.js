@@ -159,11 +159,15 @@ $(function () {
 				unlockScroll();
 				$(this).removeClass('_open');
 				$('.header__menu').removeClass('_open');
+				$('.header').removeClass('_open');
+				$('main').css({"margin-top":"0"});
 			}
 			else{
 				lockScroll();
 				$(this).addClass('_open');
 				$('.header__menu').addClass('_open');
+				$('.header').addClass('_open');
+				$('main').css({"margin-top":"60px"});
 			}
 		});
 	});
