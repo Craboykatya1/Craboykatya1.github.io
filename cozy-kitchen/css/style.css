@@ -109,7 +109,7 @@ body.scroll-locked .header {
   position: sticky;
   transition: all 0.2s ease;
   top: 0;
-  z-index: 2;
+  z-index: 9;
 }
 @media only screen and (max-width: 768px) {
   .header {
