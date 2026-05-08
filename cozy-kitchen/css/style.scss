@@ -81,6 +81,9 @@ body.scroll-locked .header{
     padding-top: 8px;
     padding-bottom: 8px;
     height: 60px;
+    @media only screen and (max-width: 768px) {
+        height: 78px;
+    }
 }
 .header{
     height: 123px;
