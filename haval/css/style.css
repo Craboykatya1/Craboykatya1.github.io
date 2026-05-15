@@ -1,26 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "TTWellingtonsMedium";
-  src: url("../fonts/TT-Wellingtons-Medium.ttf?#iefix") format("embedded-opentype"), url("../fonts/TT-Wellingtons-Medium.ttf") format("truetype"), url("../fonts/TT-Wellingtons-Medium.otf") format("opentype"), url("../fonts/TT-Wellingtons-Medium.woff") format("woff"), url("../fonts/TT-Wellingtons-Medium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTWellingtonsRegular";
-  src: url("../fonts/TT-Wellingtons-Regular.ttf?#iefix") format("embedded-opentype"), url("../fonts/TT-Wellingtons-Regular.ttf") format("truetype"), url("../fonts/TT-Wellingtons-Regular.otf") format("opentype"), url("../fonts/TT-Wellingtons-Regular.woff") format("woff"), url("../fonts/TT-Wellingtons-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTWellingtonsRegular";
-  src: url("../fonts/TT-Wellingtons-Light.ttf?#iefix") format("embedded-opentype"), url("../fonts/TT-Wellingtons-Light.ttf") format("truetype"), url("../fonts/TT-Wellingtons-Light.otf") format("opentype"), url("../fonts/TT-Wellingtons-Light.woff") format("woff"), url("../fonts/TT-Wellingtons-Light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Haval";
   src: url("../fonts/Haval-Light.ttf?#iefix") format("embedded-opentype"), url("../fonts/Haval-Light.ttf") format("truetype"), url("../fonts/Haval-Light.otf") format("opentype"), url("../fonts/Haval-Light.woff") format("woff"), url("../fonts/Haval-Light.woff2") format("woff2");
   font-weight: normal;
@@ -91,7 +70,6 @@ body.scroll-locked {
 
 /* header */
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: var(--black);
