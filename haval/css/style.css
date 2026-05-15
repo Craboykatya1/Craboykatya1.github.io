@@ -656,7 +656,7 @@ body.scroll-locked {
     gap: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .product__container {
     gap: 40px;
   }
