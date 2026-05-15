@@ -349,7 +349,7 @@ body.scroll-locked {
     top: 100%;
     z-index: 2;
     background: var(--black);
-    width: 100vw;
+    width: calc(100vw + 50px);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -358,6 +358,7 @@ body.scroll-locked {
     flex-direction: column;
     gap: 10px;
     position: static;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1250px) {
