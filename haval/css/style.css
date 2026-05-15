@@ -510,6 +510,7 @@ body.scroll-locked {
   .first-screen__title {
     font-size: 28px;
     line-height: 32px;
+    padding: 17px 20px;
   }
 }
 .first-screen__btn {
