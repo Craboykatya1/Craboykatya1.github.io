@@ -8,7 +8,9 @@
 <link rel="icon" href="img/favicon.ico">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link href='css/rest.css' type='text/css' rel='stylesheet' />
+<link href='css/swiper.css' type='text/css' rel='stylesheet' />
 <link href='css/animate.min.css' type='text/css' rel='stylesheet' />
+<link href='css/fancybox3.css' type='text/css' rel='stylesheet' />
 <link href='css/style.min.css' type='text/css' rel='stylesheet' />
 
 </head>
@@ -141,20 +143,22 @@
 							</span>
 							Записаться на тест-драйв
 						</span>
-						<span class="product__item-info-images">
-							<img src="img/m6-black.webp" alt="">
-							<img src="img/m6-white.webp" alt="">
-							<img class="_active" src="img/m6-grey.webp" alt="">
+						<span class="product__item-info-images swiper-container">
+							<div class="swiper-wrapper">
+								<img class="swiper-slide" data-index="0" src="img/m6-black.webp" alt="">
+								<img class="swiper-slide" data-index="1" src="img/m6-white.webp" alt="">
+								<img class="swiper-slide" data-index="2" src="img/m6-grey.webp" alt="">
+							</div>
 						</span>
 					</a>
 					<div class="product__item-colors">
-						<button class="product__item-colors-item _black">
+						<button class="product__item-colors-item _black _active">
 							<span></span>
 						</button>
 						<button class="product__item-colors-item _white">
 							<span></span>
 						</button>
-						<button class="product__item-colors-item _grey _active">
+						<button class="product__item-colors-item _grey">
 							<span></span>
 						</button>
 					</div>
@@ -233,15 +237,17 @@
 							</span>
 							Записаться на тест-драйв
 						</span>
-						<span class="product__item-info-images">
-							<img src="img/dargox-grey.webp" alt="">
-							<img src="img/dargox-black.webp" alt="">
-							<img src="img/dargox-white.webp" alt="">
-							<img class="_active" src="img/dargox-red.webp" alt="">
+						<span class="product__item-info-images swiper-container">
+							<div class="swiper-wrapper">
+								<img class="swiper-slide" data-index="0" src="img/dargox-grey.webp" alt="">
+								<img class="swiper-slide" data-index="1" src="img/dargox-black.webp" alt="">
+								<img class="swiper-slide" data-index="2" src="img/dargox-white.webp" alt="">
+								<img class="swiper-slide" data-index="3" src="img/dargox-red.webp" alt="">
+							</div>
 						</span>
 					</a>
 					<div class="product__item-colors">
-						<button class="product__item-colors-item _grey">
+						<button class="product__item-colors-item _grey _active">
 							<span></span>
 						</button>
 						<button class="product__item-colors-item _black">
@@ -250,7 +256,7 @@
 						<button class="product__item-colors-item _white">
 							<span></span>
 						</button>
-						<button class="product__item-colors-item _red _active">
+						<button class="product__item-colors-item _red">
 							<span></span>
 						</button>
 					</div>
@@ -319,18 +325,19 @@
 			</div>
 		</section>
 	</main>
-	<div class="modal-block">
-		<div class="modal-block__bg"></div>
-		<div class="modal-block__window">
+	<!-- <div class="modal-block" id="modal"> -->
+		<!-- <div class="modal-block__bg"></div> -->
+		<div class="modal-block__window modal-block" id="modal">
 			<div class="modal-block__window-title">Введите номер телефона</div>
 			<input class="modal-block__window-inp" type="tel" name="phone" placeholder="+7(___) ___-__-__">
 			<div class="modal-block__window-btn">Отправить</div>
 		</div>
-		<div class="modal-block__final">
+		<div class="modal-block__final modal-block" id="modal-final">
 			<div class="modal-block__window-title">Спасибо!</div>
 			<div class="modal-block__window-description">Мы свяжемся с Вами в ближайщее время</div>
 		</div>
-	</div>
+		<!-- 
+	</div> -->
 
 
 
@@ -338,6 +345,8 @@
 <script src='js/jquery-1.7.2.min.js'></script>
 <script src='js/wow.min.js'></script>
 <script src='js/mask.js'></script>
+<script src='js/swiper-bundle.js'></script>
+<script src='js/fancybox3.js'></script>
 <script src='js/main.js'></script>
 </body>
 </html>

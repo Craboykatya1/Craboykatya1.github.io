@@ -826,14 +826,17 @@ body.scroll-locked {
   background: url("../img/product-bg.png") no-repeat left bottom;
   background-size: 100%;
   margin: 0 -24px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1250px) {
   .product__item-info-images {
     margin: 0 -12px;
   }
 }
-.product__item-info-images img:not(._active) {
-  display: none;
+.product__item-info-images {
+  /* img:not(._active){
+      display: none;
+  } */
 }
 .product__item-colors {
   margin: 26px 0;
@@ -1011,24 +1014,24 @@ body.scroll-locked {
 /* Модальное окно */
 .modal-block {
   display: none;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   height: 100svh;
-  z-index: 99;
-}
-.modal-block._open {
-  display: flex;
-}
-.modal-block__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  z-index: 99; */
+  /* &._open{
+      display: flex;
+  }
+  &__bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.7);
+  } */
 }
 .modal-block__final {
   display: none;
@@ -1103,6 +1106,10 @@ body.scroll-locked {
   letter-spacing: 0%;
   text-transform: uppercase;
   border-bottom: 1px solid #000;
+}
+.modal-block__window-inp._valid {
+  border-bottom: 1px solid red;
+  color: red;
 }
 .modal-block__window-btn {
   display: flex;
